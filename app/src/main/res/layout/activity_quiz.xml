@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".QuizActivity">
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
 
     <TextView
         android:id="@+id/geo_quesion_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:text="Canberra is the capital of Australia."
+        android:text="@string/question_text"
         android:gravity="center"
+        android:padding="24dp"
+        android:layout_marginTop="180dp"
         />
 
     <LinearLayout
@@ -21,22 +22,22 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/geo_quesion_text_view"
         android:orientation="horizontal"
+        android:layout_marginTop="16dp"
         android:gravity="center"
+        style="?android:attr/buttonBarButtonStyle"
         >
 
         <Button
             android:id="@+id/true_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TRUE"
+            android:text="@string/true_button"
             />
-
         <Button
             android:id="@+id/false_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="FALSE"
-            />
+            android:text="@string/false_button"/>
 
 
     </LinearLayout>
