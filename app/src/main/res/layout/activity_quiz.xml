@@ -10,7 +10,6 @@
         android:id="@+id/geo_quesion_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/question_text"
         android:gravity="center"
         android:padding="24dp"
         android:layout_marginTop="180dp"
@@ -38,8 +37,30 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/false_button"/>
+    </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/pre_next_buttons_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/true_false_buttons_area"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        style="?android:attr/buttonBarButtonStyle"
+        >
 
+        <Button
+            android:id="@+id/pre_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pre_button"
+            />
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next_button"/>
     </LinearLayout>
 
 
